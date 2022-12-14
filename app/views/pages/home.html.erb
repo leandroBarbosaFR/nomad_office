@@ -1,2 +1,38 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<%# banner %>
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://res.cloudinary.com/leandrobarbosalemos/image/upload/v1671032149/coffeeshop.png);">
+   <div class="container">
+      <h1>Find the best spots<br> to work remotely</h1>
+      <%# <p>Change your life and learn to code at one of our campuses around the world.</p> %>
+      <a class="btn btn-flat cta-banner" href="#">Find a place</a>
+   </div>
+</div>
+<%# cards %>
+<div class="container">
+ <div class="cards">
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://res.cloudinary.com/leandrobarbosalemos/image/upload/v1671047809/coffeshop_card.jpg)">
+    Coffee Shop
+  </div>
+
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://res.cloudinary.com/leandrobarbosalemos/image/upload/v1671048032/coworking.webp)">
+    Coworking
+  </div>
+
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://res.cloudinary.com/leandrobarbosalemos/image/upload/v1671049117/nature_work.jpg)">
+    Unusual Places
+  </div>
+</div>
+
+<%# slack %>
+   <div class="slack">
+      <div class="slack-text">
+         <div class="slack-badge">
+            <h2 class="slack-community">Join our Slack community</h2>
+            <%= image_tag 'https://res.cloudinary.com/leandrobarbosalemos/image/upload/v1671050152/slack.png' %>
+         </div>
+         <p>Get in touch with other nomads and share your favorite spots</p>
+      </div>
+      <div class="slack-button">
+         <a class="btn btn-flat cta-slack" href="https://nomadoffice.slack.com">Join</a>
+      </div>
+   </div>
+</div>

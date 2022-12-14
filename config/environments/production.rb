@@ -13,6 +13,12 @@ Rails.application.configure do
   # Rake tasks automatically ignore this option for performance.
   config.eager_load = true
 
+  production:
+  cloud_name: "leandrobarbosalemos"
+  api_key: "816923966496475"
+  api_secret: "K3yPsUKSLkh_oKcmKMeZVTrEtPk"
+  secure: true
+
   # Full error reports are disabled and caching is turned on.
   config.consider_all_requests_local       = false
   config.action_controller.perform_caching = true
