@@ -1,1 +1,133 @@
 // Specific CSS for your home-page
+.banner {
+   background-size: cover;
+   background-position: center;
+   padding: 150px 0;
+   height: 100vh;
+   display: flex;
+   align-items: center;
+ }
+
+ .banner h1 {
+   margin: 0;
+   color: white;
+   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+   font-size: 32px;
+   font-weight: bold;
+   display: flex;
+   font-size: 80px;
+   font-weight: 800;
+   text-transform: uppercase;
+
+ }
+
+ .cta-banner {
+   background-color: #fff;
+   color: #333;
+   border: 1px solid #ccc;
+   border-radius: $border-radius;
+   padding: 10px 20px;
+   font-size: 16px;
+   font-weight: bold;
+   margin-top: 20px;
+ }
+
+ .cta-banner:hover {
+   background-color: #fff;
+   color: #333;
+   text-decoration: none;
+   border-radius: $border-radius;
+   box-shadow: rgba(255, 255, 255, 0.771) 0px 8px 24px;
+ }
+
+//  cards
+
+.cards {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-gap: 16px;
+   margin-top: 50px;
+   margin-bottom: 50px;
+ }
+
+ .card-category {
+   background-size: cover;
+   background-position: center;
+   height: 180px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: white;
+   font-size: 24px;
+   font-weight: bold;
+   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+   border-radius: 5px;
+   box-shadow: 0 0 15px rgba(0,0,0,0.2);
+ }
+
+ // Smallest device
+ @media (min-width: 100px) and (max-width: 575px) {
+   .cards {
+     grid-template-columns: 1fr;
+   }
+ }
+
+ // Small devices (landscape phones, 576px and up)
+ @media (min-width: 576px) {
+   .cards {
+     grid-template-columns: 1fr;
+   }
+ }
+
+ // Medium devices (tablets, 768px and up)
+ @media (min-width: 768px) {
+   .cards {
+     grid-template-columns: 1fr 1fr;
+   }
+ }
+
+ // Large devices (desktops, 992px and up)
+ @media (min-width: 992px) {
+   .cards {
+     grid-template-columns: 1fr 1fr 1fr;
+   }
+ }
+
+ // Extra large devices (large desktops, 1200px and up)
+ @media (min-width: 1200px) {
+   .cards {
+     grid-template-columns: 1fr 1fr 1fr;
+   }
+ }
+
+ //slack badge
+   .slack-badge {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 50px;
+      margin-bottom: 50px;
+   }
+
+   .slack-badge img {
+      width: 200px;
+   }
+
+   .slack-text {
+      margin-left: 20px;
+      font-size: 20px;
+      font-family: $body-font;
+   }
+
+   .slack {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 50px;
+      margin-bottom: 50px;
+   }
+
+   .slack-community {
+      margin-right: 20px;
+      font-family: $body-font;
+   }
